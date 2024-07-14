@@ -1,0 +1,158 @@
+/*Crea un archivo CSS llamado styles.css para aplicar estilos a tu Landing Page.
+Utiliza únicamente la propiedad position para posicionar los elementos en la página.*/
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #000000;
+  color: #9ad79b;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #00796b;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  z-index: 1000;
+  /* Para que el header siempre esté encima de otros contenidos */
+}
+
+/* Contenido principal y barra lateral */
+main {
+  position: relative;
+  margin-top: 80px;
+  padding: 20px;
+  background: #1c1c1c;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Sección de contenido de la web */
+.content {
+  position: relative;
+  padding: 20px;
+  background: #1c1c1c;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 40px;
+}
+
+/* Barra lateral */
+.sidebar {
+  position: absolute;
+  top: calc(100% + 20px);
+  /* Ajustando el valor para que quede justo debajo del contenido principal */
+  right: 0;
+  width: 200px;
+  padding: 20px;
+  background: #333;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 100px;
+}
+
+/* Título de la sidebar */
+.sidebar h3 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #555;
+  padding-bottom: 10px;
+}
+
+/* Añadiendo bullets a los elementos de la lista */
+.sidebar ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+/* Sección Beneficios */
+.features {
+  text-align: center;
+  position: relative;
+  margin-top: 390px;
+  margin-bottom: 390px;
+  padding: 20px;
+  background: #1c1c1c;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.feature {
+  position: relative;
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #555;
+  background: #2e2e2e;
+  border-radius: 8px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background: #00796b;
+  color: #fff;
+  z-index: 1000;
+  /* Asegura que esté encima de otros contenidos */
+}
+
+/* Estilos para los botones */
+button {
+  background: #00796b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #004d40;
+}
+
+/* Estilos de lista */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    right: auto;
+    bottom: auto;
+  }
+
+  main {
+    width: 100%;
+    margin-right: 0;
+  }
+}
